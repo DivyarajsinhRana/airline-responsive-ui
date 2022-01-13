@@ -1,6 +1,3 @@
-import { Button } from "bootstrap"
-import { Link } from "react-router-dom"
-
 
 const Airlinecard = ({item}) => {
     return (
