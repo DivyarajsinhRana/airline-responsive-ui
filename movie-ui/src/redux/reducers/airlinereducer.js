@@ -1,9 +1,9 @@
-const initialstate = [];
+const initialstate = null;
 
 export const airlinereducer = (state=initialstate,action)=>{
 
     if(action.type==="getairline"){
-      state = [...state,action.payload];
+      state = action.payload;
       // console.log("aitline data>>>>>",state)
       return state
     }
