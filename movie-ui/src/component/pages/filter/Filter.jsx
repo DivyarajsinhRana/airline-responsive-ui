@@ -5,7 +5,7 @@ import './filter.css'
 const Filter = (props) => {
    
     return (
-        <div className='d-flex justify-content-between mt-3 ml-3'>
+        <div className='d-flex justify-content-between mt-3 ml-3 '>
       
             <div className='mx-3 '>
                 <p>{props.length} Airlines found</p>

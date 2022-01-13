@@ -38,11 +38,11 @@ const Airline = () => {
     return (
     
        <>
-        <div className='row'> 
+        <div className='row navDiv'> 
             <Filter length={length} handleChange={handleChange} search={search}/>
         </div>
 
-        <div className='airlinecard mt-2'>{
+        <div className='airlinecard mt-1'>{
                filterairline && filterairline.map((item,index)=>{
                     return (
                         <div key={index} className='h-auto mx-3'>

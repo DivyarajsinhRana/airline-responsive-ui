@@ -1,6 +1,21 @@
 .airlinecard{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    background-color: #2F4050;
+   
+}
+
+.aircard{
+    box-shadow: 0px 16px 18px -9px rgba(0,0,0,0.75);
+    transition: transform 100ms ease-in;
+    cursor: pointer;
+    border: 0px solid black;
+    border-radius: 30px;
+
+}
+
+.airlinecard  :hover {
+    transform: scale(1.07);
 }
 @media only screen and (min-width: 0px) and (max-width : 768px){
     .airlinecard{
@@ -26,4 +41,9 @@
         grid-row-gap: 10px;
         place-items: center;
     }    
+}
+.img{
+    display: inline-block;
+    width: 20px;
+    margin: auto;
 }
