@@ -6,15 +6,16 @@ const Filter = (props) => {
    
     return (
         <div className='d-flex justify-content-between mt-3 ml-3'>
-            <div className='text-center mx-3 '>
-                <h3>{props.length} Airline found</h3>
+      
+            <div className='mx-3 '>
+                <p>{props.length} Airlines found</p>
             </div>
             <div className="d-flex search justify-content-center align-items-center">
                     <input className="form-control mr-sm-2 border-0" type="search" placeholder="Search by country" aria-label="Search" value={props.search} onChange={props.handleChange}/>
                     <span>{<SearchOutlined/>}</span>
             </div>
-            <div className='mx-3'>
-                <select className="form-select" aria-label="Default select example" onChange={props.handleChange}>
+            <div className='mx-3 filterdiv'>
+                <select className="form-select filter" aria-label="Default select example" onChange={props.handleChange}>
                     <option value="All">All</option>
                     <option value="Thailand">Thailand</option>
                     <option value="Hong Kong">Hong Kong</option>
@@ -36,6 +37,7 @@ const Filter = (props) => {
                     <option value="Sri Lanka AA">Sri Lanka AA</option>
                 </select>
             </div>
+       
         </div>
     )
 }

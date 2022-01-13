@@ -3,7 +3,7 @@ import { useDispatch,useSelector } from 'react-redux'
 import { getAllAirline } from '../../auth/_redux/authaction'
 import Airlinecard from './Airlinecard';
 import Filter from '../filter/Filter';
-import { SearchOutlined} from '@material-ui/icons';
+import './airline.css'
 
 const Airline = () => {
     const dispatch = useDispatch();
@@ -42,12 +42,12 @@ const Airline = () => {
             <Filter length={length} handleChange={handleChange} search={search}/>
         </div>
 
-        <div className='row mt-2'>{
+        <div className='airlinecard mt-2'>{
                filterairline && filterairline.map((item,index)=>{
                     return (
-                        <article key={index} className='col gx-2 h-auto mx-3'>
+                        <div key={index} className='h-auto mx-3'>
                             <Airlinecard  item={item}/>
-                        </article>
+                        </div>
                     )
                 })
             }

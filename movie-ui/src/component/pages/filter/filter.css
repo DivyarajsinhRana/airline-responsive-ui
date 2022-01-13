@@ -5,3 +5,41 @@
     padding-left: 20px;
     padding-right: 20px;
 }
+@media only screen and (min-width:0px) and (max-width:576px) {
+    .search{
+        width:200px;
+        height:40px;
+        margin-right: 15px;
+    }
+    .search > input {
+        width: 170px;
+    }
+    .filter{
+        width: 90px;
+        height: auto;
+    }
+   
+    
+}
+@media only screen and (min-width:576px) and (max-width:768px) {
+    .search{
+        width:250px;
+        height:40px;
+        margin-right: 15px;
+    }
+    .search > input {
+        width: 170px;
+    }
+    
+}
+@media only screen and (min-width:768px) {
+    .search{
+        width:3 00px;
+        height:40px;
+        margin-right: 15px;
+    }
+    .search > input {
+        width: 200px;
+    }
+    
+}
